@@ -1,0 +1,29 @@
+@use 'abstracts' as *;
+@use 'base' as *;
+@use 'components' as *;
+@use 'layout' as *;
+@use 'pages' as *;
+@use 'themes' as *;
+@use 'vendors' as *;
+
+html {
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+body {
+    font-weight: $normal;
+    background-color: red;  
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+}

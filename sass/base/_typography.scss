@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+$font-family: 'Open Sans', sans-serif;
+$normal: 400;
+$semibold: 600;
+$bold: 700;
+
+//Font sizes
+$heading-size: 17px;
+$paragraph-size: 16px;
+$small-footer-size: 15px;
+$xs-footer-size: 12px;
+
+// Line heights
+$heading-line-height: 1.2;
+$paragraph-line-height: 1.5;
+
+//Letter spacing
+$heading-letter-spacing: 0.5px;
+$paragraph-letter-spacing: 0.2px;
+
+//Text styling
+$black-color: #131212;;
+$black-color-alpha: rgba(19, 18, 18, 0.26);
+$border-color-alpha: rgba(23, 86, 22, 0.22);
+$green-color: #175616;
+$background-color1: #F6F5EC; 
+$background-color2: #E8ECE0;
+$background-color-input: #F8F8F8;
+$background-color-search-icon: rgba(232, 236, 224, 0.82);
