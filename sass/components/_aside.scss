@@ -1,0 +1,37 @@
+aside {
+    width: 274px;
+    height: 2090px;
+    flex-shrink: 0;
+    background-color: $background-color1; 
+}
+
+.nairaland_general {
+    margin-left: 32px;
+    
+}
+
+.nairaland_general_heading {
+    color: $green-color;
+    font-family: $font-family;
+    font-size: $paragraph-size;
+    font-weight: $semibold;
+    line-height: 21.79px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-left: 18px;
+    font-size: $paragraph-size;
+    font-weight: $normal;
+    line-height: 22px;
+    font-family: $font-family;
+    color: $black-color;
+    margin-bottom: 30px;
+}
+
+img {
+    margin-left: 32px;
+    margin-top: 50px;
+    margin-right: 42px;
+    margin-bottom: 52px;
+}
