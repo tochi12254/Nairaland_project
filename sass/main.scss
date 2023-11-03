@@ -7,7 +7,7 @@
 @use 'vendors' as *;
 
 @import './components/sign-up.scss';
-// @use "./components/sign-up";
+@import './components/login-page.scss';
 
 html {
     box-sizing: border-box;
