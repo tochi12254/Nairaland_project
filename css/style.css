@@ -44,14 +44,12 @@ select {
   width: 100%;
 }
 
-.signUp-container__first-child {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+.container__first-child {
   padding: 9rem 5rem;
   background-color: #F6F5EC;
 }
 
-.signUp-container__first-child--form {
+.container__first-child--form {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -75,7 +73,7 @@ input {
   height: 16px;
   flex-shrink: 0;
   position: absolute;
-  bottom: 9.2rem;
+  bottom: 8.2rem;
   right: 1rem;
   transform: translateY(-50%);
   transform: translateX(-50%);
@@ -88,7 +86,7 @@ input {
   font-weight: 400;
 }
 
-.signUp-container__first-child--text {
+.container__first-child--text {
   color: #131212;
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -99,14 +97,14 @@ input {
   padding-bottom: 40px;
 }
 
-.signUp-container__first-child--text2 {
+.container__first-child--text2 {
   font-size: 12px;
   color: rgba(19, 18, 18, 0.36);
   text-align: start;
   padding-left: 10px;
 }
 
-.signUp-container__first-child--icon-container {
+.container__first-child--icon-container {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -123,7 +121,7 @@ span {
   line-height: normal;
 }
 
-.signUp-container__first-child--image2 {
+.container__first-child--image2 {
   background-color: #fff;
   height: 16px;
   width: 16px;
@@ -147,13 +145,13 @@ button {
   font-weight: 600;
 }
 
-.signUp-container__first-child--image-container {
+.container__first-child--image-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.signUp-container__first-child--image {
+.container__first-child--image {
   width: 187px;
   height: 18px;
   display: flex;
@@ -161,18 +159,18 @@ button {
   margin-bottom: 20px;
 }
 
-.signUp-container__first-child--second {
+.container__first-child--second {
   display: flex;
   justify-content: space-between;
   padding-top: 12rem;
 }
 
-.signUp-container__first-child--image-container {
+.container__first-child--image-container {
   display: flex;
 }
 
-.signUp-container__first-child--second-text1,
-.signUp-container__first-child--second-text2 {
+.container__first-child--second-text1,
+.container__first-child--second-text2 {
   color: #175616;
   font-family: Open Sans;
   font-size: 16px;
@@ -181,11 +179,11 @@ button {
   line-height: normal;
 }
 
-.signUp-container__first-child--second-text2 {
+.container__first-child--second-text2 {
   padding-left: 8px;
 }
 
-.signUp-container__second-child--image {
+.container__second-child--image {
   height: 962px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -194,14 +192,17 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .signUp-container__second-child--image {
+  .container__second-child--image {
     display: flex;
   }
   .signUp-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .signUp-container__first-child {
+  .container__first-child {
     padding: 4rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 1px 1px 7px 0px #C8C8C8;
   }
   input {
     padding-top: 0.8rem;
@@ -216,18 +217,74 @@ button {
   ::placeholder {
     font-size: 16px;
   }
-  .signUp-container__first-child--text {
+  .container__first-child--text {
     font-size: 20px;
+    padding-bottom: 10px;
   }
-  .signUp-container__first-child--second {
+  .container__first-child--second {
     padding-top: 6rem;
   }
-  .signUp-container__first-child--image {
+  .container__first-child--image {
     width: 300px;
     height: 29px;
   }
-  .signUp-container__first-child--text {
-    padding-bottom: 10px;
+  .signUp-container__first-child--form-image {
+    bottom: 8rem;
+  }
+  .signUp {
+    padding-top: 10rem;
+  }
+}
+.container {
+  width: 100%;
+  padding: 20px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.login-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 964px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.container__first-child--text {
+  font-size: 20px;
+}
+
+.text2 {
+  font-weight: 600;
+}
+
+.text3 {
+  padding-top: 20px;
+}
+
+.login-container__first-child--form-image {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 10.3rem;
+  right: 1rem;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
+
+@media screen and (min-width: 768px) {
+  .login-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .login-container__first-child--form-image {
+    bottom: 10rem;
+  }
+  .login {
+    padding-top: 17rem;
+  }
+  .container2 {
+    padding-top: 12rem;
   }
 }
 html {

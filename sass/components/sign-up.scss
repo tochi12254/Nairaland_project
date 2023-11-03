@@ -16,13 +16,13 @@
   
 }
 
-.signUp-container__first-child{
+.container__first-child{
   // display: flex;
   // flex-direction: column;
   // justify-content: center;
   // align-items: center;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  // border-top-left-radius: 10px;
+  // border-bottom-left-radius: 10px;
   padding:9rem 5rem;
   background-color: $background-color1;
 }
@@ -32,7 +32,7 @@
 //   // flex-direction: column;   
 // }
 
-.signUp-container__first-child--form{
+.container__first-child--form{
   display: flex;
   flex-direction: column;
   position:relative;
@@ -61,7 +61,7 @@ input{
   height: $paragraph-size;
   flex-shrink: 0;
   position: absolute;
-  bottom:9.2rem;
+  bottom:8.2rem;
   right:1rem;
   transform: translateY(-50%);
   transform: translateX(-50%);
@@ -77,7 +77,7 @@ input{
 
 // edit eye icon please
 
-.signUp-container__first-child--text{
+.container__first-child--text{
   color: $black-color;
   text-align: center;
   font-family: $font-family;
@@ -89,14 +89,14 @@ input{
   
 }
 
-.signUp-container__first-child--text2{
+.container__first-child--text2{
   font-size: 12px;
   color: rgba(19, 18, 18, 0.36);
   text-align: start;
   padding-left: 10px;
 }
 
-.signUp-container__first-child--icon-container{
+.container__first-child--icon-container{
   display:flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -113,7 +113,7 @@ span{
   line-height: normal;
 }
 
-.signUp-container__first-child--image2{
+.container__first-child--image2{
   background-color: $white-color;
   height: $paragraph-size;
   width:$paragraph-size;
@@ -138,14 +138,14 @@ button{
   font-weight: 600;
 }
 
-.signUp-container__first-child--image-container{
+.container__first-child--image-container{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 
-.signUp-container__first-child--image{
+.container__first-child--image{
   width: 187px;
   height: 18px;
   display:flex;
@@ -155,18 +155,18 @@ button{
 }
 
 
-.signUp-container__first-child--second{
+.container__first-child--second{
   display:flex;
   justify-content: space-between;
   padding-top: 12rem;  
 }
 
-.signUp-container__first-child--image-container{
+.container__first-child--image-container{
   display:flex;
 }
 
-.signUp-container__first-child--second-text1,
-.signUp-container__first-child--second-text2{
+.container__first-child--second-text1,
+.container__first-child--second-text2{
   color: $green-color;
   font-family: Open Sans;
   font-size: $paragraph-size;
@@ -176,11 +176,12 @@ button{
   
 }
 
-.signUp-container__first-child--second-text2{
+.container__first-child--second-text2{
   padding-left: 8px;
 }
 
-.signUp-container__second-child--image{
+
+.container__second-child--image{
    height: 962px;
    border-top-right-radius: 10px;
    border-bottom-right-radius: 10px;
@@ -190,14 +191,17 @@ button{
 
 
 @media screen and (min-width:768px){
-  .signUp-container__second-child--image{
+  .container__second-child--image{
     display:flex;
   }
  .signUp-container{
   grid-template-columns: repeat(2, minmax(0,1fr));
  }
- .signUp-container__first-child{
- padding: 4rem;
+ .container__first-child{
+   padding: 4rem;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   box-shadow: 1px 1px 7px 0px #C8C8C8;
  }
  input{
   padding-top: 0.8rem;
@@ -212,20 +216,24 @@ button{
  ::placeholder{
   font-size: 16px;
  }
- .signUp-container__first-child--text{
+ .container__first-child--text{
   font-size: 20px;
+  padding-bottom:10px ;
  }
- .signUp-container__first-child--second{
+ .container__first-child--second{
   padding-top:6rem;
  }
- .signUp-container__first-child--image{
+ .container__first-child--image{
   width: 300px;
   height: 29px;
  }
- .signUp-container__first-child--text{
-  padding-bottom:10px;
-
+ .signUp-container__first-child--form-image{
+  bottom:8rem;
  }
+ .signUp{
+  padding-top:10rem;
+ }
+
 }
   
 
