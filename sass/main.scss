@@ -6,24 +6,30 @@
 @use 'themes' as *;
 @use 'vendors' as *;
 
+@import './components/sign-up.scss';
+@import './components/login-page.scss';
+
+
 html {
     box-sizing: border-box;
     font-family: $font-family;
+    width:100%;
 }
 
 body {
     font-weight: $normal;
-    background-color: red;  
+    width:100%;
+    // background-color: red;  
 }
 
-ul {
-    list-style: none;
-}
+// ul {
+//     list-style: none;
+// }
 
 a {
     text-decoration: none;
 }
 
-.row {
-    display: flex;
-}
+// .row {
+//     display: flex;
+// }
