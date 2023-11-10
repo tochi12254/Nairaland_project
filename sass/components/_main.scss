@@ -304,12 +304,14 @@
                             width: 70%;
 
                             @include medium-screens-and-below{
+                                margin-top: 2rem;
                                 max-width: 70%;
                                 overflow: hidden;
                                 flex: 1;
                             }
 
                             @include small-screens-and-below{
+                                margin-top: 0;
                                 max-width: 80%;
                             }
                             
@@ -385,11 +387,7 @@
                                 border: none;
                                 padding: 0.5rem 1rem;
                             }
-                        }
-
-                        @include medium-screens-and-below {
-                            margin-top: 0;
-                        }
+                        }                        
                     }
                 }
 
@@ -417,7 +415,7 @@
                 }
             } //post ends
 
-            @include medium-screens-and-below{
+            @include small-screens-and-below{
                 gap: 1.25rem;
                 padding: 1.25rem 10px;
             

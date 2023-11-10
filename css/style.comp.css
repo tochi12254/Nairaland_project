@@ -390,6 +390,7 @@ select {
 }
 @media screen and (max-width: 900px) {
   .main_card--body-post-main-div-links {
+    margin-top: 2rem;
     max-width: 70%;
     overflow: hidden;
     flex: 1;
@@ -397,6 +398,7 @@ select {
 }
 @media screen and (max-width: 800px) {
   .main_card--body-post-main-div-links {
+    margin-top: 0;
     max-width: 80%;
   }
 }
@@ -469,11 +471,6 @@ select {
   border: none;
   padding: 0.5rem 1rem;
 }
-@media screen and (max-width: 900px) {
-  .main_card--body-post-main-div {
-    margin-top: 0;
-  }
-}
 @media screen and (max-width: 800px) {
   .main_card--body-post {
     gap: 13px;
@@ -494,7 +491,7 @@ select {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .main_card--body {
     gap: 1.25rem;
     padding: 1.25rem 10px;
