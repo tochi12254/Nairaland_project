@@ -1,38 +1,10 @@
-@use 'abstracts' as *;
-@use 'base' as *;
-@use 'components' as *;
-@use 'layout' as *;
-@use 'pages' as *;
-@use 'themes' as *;
-@use 'vendors' as *;
-
-@import './components/sign-up.scss';
-@import './components/login-page.scss';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// @use 'abstracts' as *;
+// @use 'base' as *;
+// @use 'components' as *;
+// @use 'layout' as *;
+// @use 'pages' as *;
+// @use 'themes' as *;
+// @use 'vendors' as *;
 
 //Abstract files
 @import "./abstracts/mixins";
@@ -44,25 +16,5 @@
 @import "./pages/unauthenticated-page";
 //Layout files
 
-
-// html {
-//     box-sizing: border-box;
-//     font-family: $font-family;
-// }
-
-// body {
-//     font-weight: $normal;
-//     background-color: ;  
-// }
-
-// ul {
-//     list-style: none;
-// }
-
-// a {
-//     text-decoration: none;
-// }
-
-// .row {
-//     display: flex;
-// }
+@import './components/sign-up.scss';
+@import './components/login-page.scss';
