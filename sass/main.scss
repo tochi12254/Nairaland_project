@@ -13,7 +13,7 @@
 //Component files
 @import "./components/aside", "./components/main";
 //Pages files
-@import "./pages/unauthenticated-page";
+@import "./pages/unauthenticated-page", "./pages/authenticated-page";
 //Layout files
 
 @import './components/sign-up.scss';

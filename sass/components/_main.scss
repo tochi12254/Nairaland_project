@@ -92,6 +92,7 @@
                 height: 3.125rem;
                 border: none;
                 margin: 0;
+                padding: 0;
                 border: 1px solid $border-color-alpha;
                 border-left: none;
                 border-radius:  0 25px 25px 0;
@@ -99,12 +100,14 @@
                 align-items: center;
                 background-color: $background-color-search-icon;
 
-                @include small-screens-and-below{
+
+                @include medium-screens-and-below {
                     height: 2.5rem;
+                    width: 2.5rem;
                 }
 
                 img {
-                    @include small-screens-and-below{
+                    @include medium-screens-and-below{
                         width: 16px;
                         height: 16px;
                     }
@@ -112,7 +115,7 @@
             }
 
             @include small-screens-and-below{
-                min-width: 100%;
+                min-width: 95%;
             }
         }
 
@@ -139,6 +142,7 @@
             color: $black-color;
             border-radius: 30px;
             background-color: #fff;
+            cursor: pointer;
 
             @include medium-screens-and-below{
                 display: none;
@@ -278,6 +282,11 @@
 
                         span {
                             color: $green-color;
+                            font-size: 1rem;
+
+                            @include small-screens-and-below {
+                                font-size: 12px;
+                            }
                         }
                     }
 
@@ -298,10 +307,11 @@
                     &-div{
                         margin-top: 2.5rem;
                         justify-content: space-between;
-                        max-width: 100%;
+                        max-width: 95%;
 
                         &-links{
-                            width: 70%;
+                            flex: 1;
+                            // width: 70%;
 
                             @include medium-screens-and-below{
                                 margin-top: 2rem;
@@ -371,6 +381,7 @@
 
                         &-buttons{
                             gap: 1.875rem;
+                            flex: 1;
 
                             @include large-screens-and-below{
                                 gap: 1.5rem;
@@ -378,6 +389,15 @@
 
                             @include medium-screens-and-below{ 
                                 display: none; 
+                            }
+
+                            .latest-news {
+                                padding-right: 3rem;
+                                gap: 1.3rem;
+
+                                @include large-screens-and-below{
+                                    gap: 1rem;
+                                }
                             }
 
                             button {
@@ -539,6 +559,33 @@
                     }
                 }
             }
+        }
+    }
+
+    .submit-post {
+        width: 569px;
+        max-width: 90%;
+        height: 81px;
+        font-size:  20px;
+        border-radius: 10px;
+        background: #F6F5EC;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+        border: 2px solid rgba(23, 86, 22, 0.22);
+        margin-left: 200px;
+        transition: 0.3s;
+
+        @include medium-screens-and-below{
+            font-size:  12px;
+            width: 350px;
+            height: 50px;
+            margin-left: 50px;
+        } 
+
+        @include small-screens-and-below {
+            margin-left: 20px;
         }
     }
 
