@@ -1,0 +1,241 @@
+.container{
+  width:100%;
+  // max-width: 1200px;
+  padding:20px;
+  height:100vh;
+  margin:0 auto;
+  
+}
+
+.signUp-container{
+  display:grid;
+  grid-template-columns: repeat(1, 1fr);
+  height: 964px;
+  border-radius: 10px;
+  width:100%;
+  
+}
+
+.container__first-child{
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // border-top-left-radius: 10px;
+  // border-bottom-left-radius: 10px;
+  padding:9rem 5rem;
+  background-color: $background-color1;
+}
+
+// .signUp-container__first-child--first{
+//   // display: flex;
+//   // flex-direction: column;   
+// }
+
+.container__first-child--form{
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  // align-items: center;
+  // align-items: center;
+  // margin:0 auto;
+  
+ }
+
+input{
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-right:14rem;
+  padding-left: 1rem;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background:$white-color;
+  box-shadow: 0px 5px 12px -3px rgba(0,0,0,0.1);
+  border: none;
+  margin-top: 30px;  
+}
+
+
+.signUp-container__first-child--form-image{
+  width:$paragraph-size;
+  height: $paragraph-size;
+  flex-shrink: 0;
+  position: absolute;
+  bottom:8.2rem;
+  right:1rem;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
+
+
+::placeholder{
+  color: rgba(19, 18, 18, 0.36);
+  font-family: $font-family;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+// edit eye icon please
+
+.container__first-child--text{
+  color: $black-color;
+  text-align: center;
+  font-family: $font-family;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 40px;
+  
+}
+
+.container__first-child--text2{
+  font-size: 12px;
+  color: rgba(19, 18, 18, 0.36);
+  text-align: start;
+  padding-left: 10px;
+}
+
+.container__first-child--icon-container{
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+span{
+  color: #175616;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.container__first-child--image2{
+  background-color: $white-color;
+  height: $paragraph-size;
+  width:$paragraph-size;
+  border-radius: 2px;
+  
+}
+
+button{
+  display: flex;
+  padding: 20px 180px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: $green-color;
+  border: none;
+  box-shadow: 0px 0px 0px 0px rgba(23, 86, 22, 0.14);
+  color: $white-color;
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.container__first-child--image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container__first-child--image{
+  width: 187px;
+  height: 18px;
+  display:flex;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+
+}
+
+
+.container__first-child--second{
+  display:flex;
+  justify-content: space-between;
+  padding-top: 12rem;  
+}
+
+.container__first-child--image-container{
+  display:flex;
+}
+
+.container__first-child--second-text1,
+.container__first-child--second-text2{
+  color: $green-color;
+  font-family: Open Sans;
+  font-size: $paragraph-size;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  
+}
+
+.container__first-child--second-text2{
+  padding-left: 8px;
+}
+
+
+.container__second-child--image{
+   height: 962px;
+   border-top-right-radius: 10px;
+   border-bottom-right-radius: 10px;
+   box-shadow: 1px 1px 7px 0px #C8C8C8;  
+   display:none;
+}
+
+
+@media screen and (min-width:768px){
+  .container__second-child--image{
+    display:flex;
+  }
+ .signUp-container{
+  grid-template-columns: repeat(2, minmax(0,1fr));
+ }
+ .container__first-child{
+   padding: 4rem;
+   border-top-left-radius: 10px;
+   border-bottom-left-radius: 10px;
+   box-shadow: 1px 1px 7px 0px #C8C8C8;
+ }
+ input{
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-right:2rem;
+  padding-left: 0.5rem;
+ }
+ button{
+  padding:1rem;
+  font-size: $paragraph-size;
+ }
+ ::placeholder{
+  font-size: 16px;
+ }
+ .container__first-child--text{
+  font-size: 20px;
+  padding-bottom:10px ;
+ }
+ .container__first-child--second{
+  padding-top:6rem;
+ }
+ .container__first-child--image{
+  width: 300px;
+  height: 29px;
+ }
+ .signUp-container__first-child--form-image{
+  bottom:8rem;
+ }
+ .signUp{
+  padding-top:10rem;
+ }
+
+}
+  
+
+
+

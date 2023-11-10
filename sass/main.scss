@@ -10,28 +10,17 @@
 @import './components/login-page.scss';
 
 
+html {   //Needs to be removed
+    box-sizing: border-box;
+    font-family: $font-family;
+    width:100%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+body {  //Needs to be removed
+    font-weight: $normal;
+    width:100%;
+    // background-color: red;  
+}
 
 
 //Abstract files
@@ -43,4 +32,3 @@
 //Pages files
 @import "./pages/unauthenticated-page";
 //Layout files
-
