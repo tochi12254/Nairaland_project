@@ -7,29 +7,32 @@
 // @use 'vendors' as *;
 
 //Abstract files
-@import "./abstracts/mixins";
 //Base files
-@import "./base/typography", "./base/base", "./base/reset";
+@import "./base/typography";
 //Component files
 @import "./components/aside", "./components/main";
-//Pages files
-@import "./pages/unauthenticated-page";
 //Layout files
-
-@import './components/sign-up.scss';
-@import './components/login-page.scss';
+@import "./layout/container";
 
 
-html {   //Needs to be removed
-    box-sizing: border-box;
-    font-family: $font-family;
-    width:100%;
-}
+// html {
+//     box-sizing: border-box;
+//     font-family: $font-family;
+// }
 
-body {  //Needs to be removed
-    font-weight: $normal;
-    width:100%;
-    // background-color: red;  
-}
+// body {
+//     font-weight: $normal;
+//     background-color: ;  
+// }
 
+// ul {
+//     list-style: none;
+// }
 
+// a {
+//     text-decoration: none;
+// }
+
+// .row {
+//     display: flex;
+// }
