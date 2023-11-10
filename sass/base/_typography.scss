@@ -20,11 +20,17 @@ $heading-letter-spacing: 0.5px;
 $paragraph-letter-spacing: 0.2px;
 
 //Text styling
-$black-color: #131212;;
-$black-color-alpha: rgba(19, 18, 18, 0.26);
+$black-color: #131212;
+$black-alpha-color: rgba(19, 18, 18, 0.26);
+$black-alpha-color2: rgba(19, 18, 18, 0.36);
 $border-color-alpha: rgba(23, 86, 22, 0.22);
+$border-color-alpha-post: rgba(19, 18, 18, 0.13);
 $green-color: #175616;
-$background-color1: #F6F5EC; 
-$background-color2: #E8ECE0;
-$background-color-input: #F8F8F8;
-$background-color-search-icon: rgba(232, 236, 224, 0.82);
+$background-color: #F6F5EC; 
+$background2-color: #E8ECE0;
+$background3-color-input: #F8F8F8;
+$background4-color-search: rgba(232, 236, 224, 0.82);
+
+
+//border-radius
+$border-radius: 10px;

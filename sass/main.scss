@@ -7,32 +7,12 @@
 // @use 'vendors' as *;
 
 //Abstract files
+@import "./abstracts/mixins";
 //Base files
-@import "./base/typography";
+@import "./base/typography", "./base/base", "./base/reset";
 //Component files
 @import "./components/aside", "./components/main";
+//Pages files
+@import "./pages/unauthenticated-page";
 //Layout files
-@import "./layout/container";
 
-
-// html {
-//     box-sizing: border-box;
-//     font-family: $font-family;
-// }
-
-// body {
-//     font-weight: $normal;
-//     background-color: ;  
-// }
-
-// ul {
-//     list-style: none;
-// }
-
-// a {
-//     text-decoration: none;
-// }
-
-// .row {
-//     display: flex;
-// }
