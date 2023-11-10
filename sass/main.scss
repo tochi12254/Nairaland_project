@@ -13,23 +13,8 @@
 //Component files
 @import "./components/aside", "./components/main";
 //Pages files
-@import "./pages/unauthenticated-page";
+@import "./pages/unauthenticated-page", "./pages/authenticated-page";
 //Layout files
 
 @import './components/sign-up.scss';
 @import './components/login-page.scss';
-
-
-html {   //Needs to be removed
-    box-sizing: border-box;
-    font-family: $font-family;
-    width:100%;
-}
-
-body {  //Needs to be removed
-    font-weight: $normal;
-    width:100%;
-    // background-color: red;  
-}
-
-
