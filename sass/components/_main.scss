@@ -101,7 +101,7 @@
                 background-color: $background-color-search-icon;
 
 
-                @include medium-screens-and-below {
+                @include small-screens-and-below {
                     height: 2.5rem;
                     width: 2.5rem;
                 }
@@ -115,6 +115,7 @@
             }
 
             @include small-screens-and-below{
+                //width: 100%;
                 min-width: 95%;
             }
         }

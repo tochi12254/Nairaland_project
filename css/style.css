@@ -189,7 +189,7 @@ select {
   align-items: center;
   background-color: rgba(232, 236, 224, 0.82);
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
   .main_section--inputs-button {
     height: 2.5rem;
     width: 2.5rem;
