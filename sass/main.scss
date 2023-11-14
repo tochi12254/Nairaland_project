@@ -18,3 +18,8 @@
 
 @import './components/sign-up.scss';
 @import './components/login-page.scss';
+
+
+@import "abstracts/variables";
+@import "layout/header";
+@import "components/index";

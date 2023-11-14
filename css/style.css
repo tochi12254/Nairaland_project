@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
 html {
   box-sizing: border-box;
@@ -28,6 +29,11 @@ a {
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /* Remove default margin */
@@ -93,6 +99,235 @@ select {
     display: none;
   }
 }
+/* @media (max-width: 768px) {
+  .none {
+    visibility: visible;
+  }
+}
+#section-one {
+  border: 1px solid #C8CCC0;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: normal;
+  background: #F6F6EC;
+}
+
+img {
+  margin: 0 auto;
+}
+
+input {
+  border-radius: 15px;
+  background-color: #ffffff;
+  outline: none;
+  height: 26px;
+}
+
+#long {
+  width: 200px;
+}
+
+#short {
+  width: 61px;
+}
+
+span {
+  color: blue;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Remove default margin 
+body, h1, h2, h3, h4, p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Make images easier to work with 
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons 
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+#container {
+  width: 100%;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#section-two {
+  margin-top: 7px;
+  border-radius: 12px;
+  background: #F6F6EC;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#section-two_heading {
+  background: #E8ECE0;
+  text-align: center;
+  border-radius: 8px;
+}
+
+#section-two_componentA, #section-two_componentB, #section-two_componentC {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #181870;
+  font-style: normal;
+  font-weight: 400;
+  padding: 4px;
+  background-color: #F6F6EC;
+  text-align: left;
+}
+
+#section-two_componentB {
+  background: #E8ECE0;
+}
+
+#section-two_componentC {
+  border-radius: 12px;
+  border-top: none;
+}
+
+#section-three {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
+#section-three_img {
+  width: 500px;
+  gap: 0px;
+  text-align: center;
+}
+
+.visible {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.none {
+  visibility: hidden;
+}
+
+#section-four {
+  background: #F6F6EC;
+}
+
+#section-four_componentA {
+  background: #E8ECE0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  color: #181870;
+  text-align: center;
+  padding: 8px;
+}
+
+#smiley {
+  width: 15px;
+  background-color: #E8ECE0;
+  flex: shrink 0;
+  margin-right: 8px;
+  text-align: center;
+}
+
+#smiley-two {
+  width: 15px;
+  margin-left: 8px;
+}
+
+#section-four_componentB {
+  text-align: center;
+  padding: 10px 0px;
+  text-align: center;
+}
+
+#news-component {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #181870;
+  font-style: normal;
+  font-weight: 400;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+}
+
+#icon {
+  background: #F6F6EC;
+  width: 10px;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  #section-three_img {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 780px) {
+  .none {
+    visibility: visible;
+  }
+  #section-three {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  #section-three_img {
+    width: 320px;
+    margin: 0 auto;
+  }
+  #icon {
+    background: #F6F6EC;
+    width: 10px;
+    margin: 0px 10px;
+  }
+  #long {
+    width: 514px;
+  }
+  #short {
+    width: 61px;
+  }
+}
+@media (min-width: 1200px) {
+  #section-three_img {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+} */
 
 .main {
   flex: 4;
