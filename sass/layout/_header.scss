@@ -1,0 +1,31 @@
+#section-one {
+  border: 1px solid #c8ccc0;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: normal;
+  background: #f6f6ec;
+}
+#container img {
+  margin: 0 auto;
+}
+#container input {
+  border-radius: 15px;
+  background-color: #ffffff;
+  outline: none;
+  height: 26px;
+}
+#long {
+  width: 200px;
+}
+#short {
+  width: 61px;
+}
+#container span, #container span a {
+  color: blue;
+}
+
+#container span.day, #container span.time {
+  color: initial;
+  font-weight: initial;
+}
