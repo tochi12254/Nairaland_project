@@ -7,7 +7,7 @@
 // @use 'vendors' as *;
 
 //Abstract files
-@import "./abstracts/mixins";
+@import './abstracts/variables', "./abstracts/mixins";
 //Base files
 @import "./base/typography", "./base/base", "./base/reset";
 //Component files
@@ -20,6 +20,6 @@
 @import './components/login-page.scss';
 
 
-@import "abstracts/variables";
-@import "layout/header";
-@import "components/index";
+@import './abstracts/variables';
+@import './layout/header';
+@import './components/index-html';
