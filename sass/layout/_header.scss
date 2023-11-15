@@ -21,6 +21,11 @@
 #short {
   width: 61px;
 }
-#container span {
+#container span, #container span a {
   color: blue;
+}
+
+#container span.day, #container span.time {
+  color: initial;
+  font-weight: initial;
 }

@@ -1,6 +1,8 @@
 const display=document.getElementById("section-four_componentB")
 const prevIcon="https://res.cloudinary.com/du0mikmrp/image/upload/v1698912348/home%20page/sdtcyv9wkqaexoaiqbcd.svg"
 const nextIcon="https://res.cloudinary.com/du0mikmrp/image/upload/v1699092737/2_eh1fsn.svg"
+const day = document.querySelector('.day');
+const time = document.querySelector('.time');
 
 const news=[
         "Gunmen Kidnap RSBC News Director Anthony-Nwokocha (Photo)",
@@ -48,7 +50,19 @@ const showNews=()=>{
     })
 }
 
-        
-
 showNews()
-console.log(display)
+
+//const now = Date.now();
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const date = new Date();
+const thisDay = date.getDay();
+const thisMonth = date.getMonth();
+const thisDate = `${days[thisDay]} ${date.getDate()} ${months[thisMonth]} ${date.getFullYear()}`
+
+const hour = date.getHours() < 10 ? `0${date.getHours()}` : date.getHours();
+const minute = date.getMinutes < 10 ? `0${date.getMinutes()}` : date.getMinutes();
+const thisTime = `${hour - 12}:${minute}${date.getHours() < 12 ? 'am' : 'pm'}`;
+
+day.textContent = thisDate;
+time.textContent = thisTime;

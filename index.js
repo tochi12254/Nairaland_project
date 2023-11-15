@@ -7,8 +7,10 @@ const mainCardHeader = document.querySelector('.main_card--header');
 const mainCardBody2 = document.querySelector('.main_card--body2');
 const mainFooter = document.querySelector('.main_footer');
 const cancel = document.querySelector('.main_card--body2-paragraph1-span');
-const submit1 = document.querySelector('.main_card--body2-textarea-button')
-const submit2 = document.querySelector('.main_card--body2-button2')
+const submit1 = document.querySelector('.main_card--body2-textarea-button');
+const submit2 = document.querySelector('.main_card--body2-button2');
+const day = document.querySelector('.date');
+
 
 const coords = mainCard.getBoundingClientRect();
 const coordsHeader = mainCardHeader.getBoundingClientRect();
@@ -62,7 +64,7 @@ function cancelAndUpdate(){
     main.style.position = 'relative';
     newDiv.style.position = 'absolute'
     newDiv.style.top = '130px';
-    newDiv.style.zIndex = '2000'
+    newDiv.style.zIndex = '2000';
 }
 
 addTopicDesktop.addEventListener('click', showAddTopicDesktop);
@@ -70,3 +72,13 @@ addTopicMobile.addEventListener('click', showAddTopicMobile);
 cancel.addEventListener('click', cancelAddTopic);
 submit1.addEventListener('click', cancelAndUpdate);
 submit2.addEventListener('click', cancelAndUpdate);
+
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+const date = new Date();
+const thisDay = date.getDay();
+const thisMonth = date.getMonth();
+const thisDate = `${days[thisDay]}, ${date.getDate()} ${months[thisMonth]} ${date.getFullYear()}`
+
+
+day.textContent = thisDate;

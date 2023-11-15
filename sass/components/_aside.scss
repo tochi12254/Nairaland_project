@@ -45,4 +45,8 @@
     @include medium-screens-and-below{
         display: none;
     }
+
+    @media screen and (min-width: 901px) and (max-width:1250px){
+        padding-bottom: 765px;
+    }
 }
