@@ -1,0 +1,27 @@
+.main {
+    &_header {
+        &--right {
+            &-button {
+                background: $green-color;
+                color: #FFF;
+                padding: 10px 40px;
+                border-radius: 30px;
+                box-shadow: 0px 0px 0px 0px rgba(23, 86, 22, 0.14), 1px 1px 3px 0px rgba(23, 86, 22, 0.14), 5px 3px 6px 0px rgba(23, 86, 22, 0.12), 12px 6px 8px 0px rgba(23, 86, 22, 0.07), 21px 11px 9px 0px rgba(23, 86, 22, 0.02), 32px 18px 10px 0px rgba(23, 86, 22, 0.00);
+
+                @include medium-screens-and-below{
+                    display: none;
+                }
+            }
+
+            &-icon {
+                display: none;
+
+                @include medium-screens-and-below{
+                    display: block;
+                    width: 43px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}

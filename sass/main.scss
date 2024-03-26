@@ -1,35 +1,25 @@
-@use 'abstracts' as *;
-@use 'base' as *;
-@use 'components' as *;
-@use 'layout' as *;
-@use 'pages' as *;
-@use 'themes' as *;
-@use 'vendors' as *;
+// @use 'abstracts' as *;
+// @use 'base' as *;
+// @use 'components' as *;
+// @use 'layout' as *;
+// @use 'pages' as *;
+// @use 'themes' as *;
+// @use 'vendors' as *;
+
+//Abstract files
+@import './abstracts/variables', "./abstracts/mixins";
+//Base files
+@import "./base/typography", "./base/base", "./base/reset";
+//Component files
+@import "./components/aside", "./components/main";
+//Pages files
+@import "./pages/unauthenticated-page", "./pages/authenticated-page";
+//Layout files
 
 @import './components/sign-up.scss';
 @import './components/login-page.scss';
 
 
-html {
-    box-sizing: border-box;
-    font-family: $font-family;
-    width:100%;
-}
-
-body {
-    font-weight: $normal;
-    width:100%;
-    // background-color: red;  
-}
-
-// ul {
-//     list-style: none;
-// }
-
-a {
-    text-decoration: none;
-}
-
-// .row {
-//     display: flex;
-// }
+@import './abstracts/variables';
+@import './layout/header';
+@import './components/index-html';
